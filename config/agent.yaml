@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: EDU-C2-076
+name: University Research-Grant Eligibility Evidence Q&A Agent
+namespace: edu
+version: 0.1.0
+enabled: true
+description: University Research-Grant Eligibility Evidence Q&A Agent
+class: src.graph.graph.Graph
+category: Cat 2
+industry: EDU
+base_type: RAGAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []

@@ -1,0 +1,9 @@
+# Runtime parameters loaded by AgentRegistry and passed as Graph(config=...).
+# Static manifest fields (name/version/class/requires) live in agent.yaml.
+
+max_retry: 3
+top_k: 5
+confidence_threshold: 0.6
+guideline_kb_namespace: grant_eligibility_guidelines
+language: en
+timeout_s: 30
